@@ -20,22 +20,22 @@ Pipeline automatizado em Python para extração, normalização, modelagem relac
 ## ⚙️ Como Executar
 
 ### 1. Clonar repositório e preparar ambiente
-\`\`\`bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-cd nome-do-repositorio
+```bash
+git clone https://github.com/JGuilhermeG/academic-analytics-pipeline.git
+cd academic-analytics-pipeline
 python -m venv venv
 source venv/bin/activate  # No Windows: venv\Scripts\activate
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 2. Configurar variáveis de ambiente
 Crie um arquivo `.env` na raiz baseado no `.env.example`:
-\`\`\`env
+```env
 GEMINI_API_KEY=sua_chave_aqui
-\`\`\`
+```
 
 ### 3. Execução do pipeline
-\`\`\`bash
+```bash
 # 1. Cria as tabelas no banco de dados
 python src/DataBase.py
 
@@ -50,4 +50,4 @@ python src/GerarRelatorio_Excel.py
 
 # 5. Geração de diagnóstico analítico via IA
 python src/GerarDiagnostico_IA.py
-\`\`\`
+```
