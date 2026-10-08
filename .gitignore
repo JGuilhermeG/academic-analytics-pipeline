@@ -1,0 +1,7 @@
+.env
+*.db
+dados_fluig.json
+Dashboard_Academico_Real.xlsx
+__pycache__/
+*.pyc
+.vscode/
